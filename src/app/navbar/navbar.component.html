@@ -1,0 +1,79 @@
+<div id="Ruban">
+    <div class="bar">
+        <nav class="toolbar_left">
+            <ul>
+                <li><a href="#">Prenium</a></li>
+                <li><a href="#">Assistance</a></li>
+                <li>
+                    <form method="post" action="#">
+                        <!--<?php
+                        if ($constante_wall != 0) { // Ce if permet de changer constante_wall que si lorsque nous sommes sur le profil et donc pas encore sur le wall
+                            echo '<input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+                                <input type="hidden" id="choose" name="choose" value="0">
+                                <button type="submit" id="changer_constante_wall" name="changer_constante_wall">Wall</button>';
+                        } else {
+                            echo '<button>Wall</button>';
+                        }
+                        ?>-->
+                    </form>
+                </li>
+                <li>
+                    <form method="post" action="#">
+                       <!-- <?php
+                        if ($constante_wall != 1) { // Ce if permet de changer constante_wall que si lorsque nous sommes sur le wall et donc pas encore sur le profil
+                            echo '<input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+                                    <input type="hidden" id="choose" name="choose" value="1">
+                                    <input type="hidden" id="USER_ID" name="USER_ID" value="'.$_SESSION["userID"].'">
+                                    <button type="submit" id="changer_constante_wall" name="changer_constante_wall">Profil</button>';
+                        } else {
+                            echo '<button>Profil</button>';
+                        }
+                        ?>-->
+                    </form>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="logo">
+            <p>TheChain<img src="./assets/Images/logo_chaine.png" width="30px" height="30px" alt="logo"></p>
+        </div>
+        <nav class="toolbar_right">
+            <ul>
+                <li><a href="#">
+                    <!--<?php
+                        if ( isset($_SESSION["userID"]) ){
+                            $query = 'SELECT `pseudo`, `pdp`, `ID` FROM `user` WHERE `ID` ='.$_SESSION["userID"];
+                            $result = $SQLconn->conn->query($query);
+                            if( mysqli_num_rows($result) != 0 ){
+                                $row = $result->fetch_assoc();
+                                if ($constante_wall != 1) { // Ce if permet de changer constante_wall que si lorsque nous sommes sur le wall et donc pas encore sur le profil
+                                    echo '<form method="post" action="#">
+                                                <input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+                                                <input type="hidden" id="USER_ID" name="USER_ID" value="'.$_SESSION["userID"].'">
+                                                <input type="hidden" id="choose" name="choose" value="1">
+                                                <button type="submit" id="changer_constante_wall" name="changer_constante_wall" style="background-color: transparent; border: none;"><img src="./Images/Upload/'.$row["pdp"].'" alt="profil" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;"></button>
+                                            </form>';
+                                } else {
+                                    echo '<form method="post" action="#">
+                                            <input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+                                            <input type="hidden" id="USER_ID" name="USER_ID" value="'.$_SESSION["userID"].'">
+                                            <input type="hidden" id="choose" name="choose" value="0">
+                                            <button type="submit" id="changer_constante_wall" name="changer_constante_wall" style="background-color: transparent; border: none;"><img src="./Images/Upload/'.$row["pdp"].'" alt="profil" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;"></button>
+                                        </form>';
+                                } 
+                            }
+                        }else{
+                            echo "Unknown User";
+                        }
+                    ?>-->
+                </a></li>
+                <li><div class="setts"><img src="./assets/Images/settings.png" width="30px" height="30px" alt="settings"></div>
+                    <ul class="sub_toolbar_right">
+                        <li class="login"><a href="/login">LOGIN</a></li>
+                        <li class="logout"><a href="./assets/logout.php">LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

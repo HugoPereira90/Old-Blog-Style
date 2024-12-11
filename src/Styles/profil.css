@@ -1,0 +1,48 @@
+/* profil.css */
+
+/* Styles de l'en-tête */
+header {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    display: flex; /* affichage en tant que conteneur flexible */
+    flex-direction: column; /* disposition verticale des éléments enfants */
+    align-items: center; /* centrage horizontal des éléments enfants */
+}
+
+/* Styles de la photo de profil */
+.profile-pic {
+    width: 150px; 
+    height: 150px; 
+    overflow: hidden; /* cachement du contenu débordant */
+    border-radius: 50%; /* arrondi des bords */
+}
+
+/* Styles du nom d'utilisateur */
+.username {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+/* Styles du bouton */
+.suivre button {
+    background-color: #202020; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; /* curseur pointeur au survol */
+    margin-top: 10px; 
+    display: block; /* affichage en tant qu'élément de bloc */
+}
+
+/* Styles de la section */
+section {
+    margin: 20px; 
+    text-align: center; 
+}
+
+/* Styles du titre de section */
+h2 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+}

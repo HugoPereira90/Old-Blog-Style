@@ -1,0 +1,23 @@
+<article class="post">
+    <div class="profil">
+        <img src="{{message.OwnerID}}" alt="profil" style="width: 30px; height: 30px; object-fit: cover; border-radius: 50%;">
+        <form method="post" action="#">
+            <input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+            <input type="hidden" id="USER_ID" name="USER_ID" value="{{message.ID}}">
+            <input type="hidden" id="choose" name="choose" value="1">
+            <button type="submit" id="changer_constante_wall" name="changer_constante_wall" style="background-color: transparent; border: none;"><p>{{message.OwnerID}}</p></button>
+        </form>
+        <ul>
+            <li class="time"><p>{{message.date}}</p></li>
+            <li class="subject">
+                <form method="post" action="#">
+                    <input type="hidden" id="constante_wall" name="constante_wall" value="'.$constante_wall.'">
+                    <input type="hidden" id="THEME_ID" name="THEME_ID" value="{{message.themeID}}">
+                    <button type="submit" id="changer_constante_wall_theme" name="changer_constante_wall_theme" style="background-color: transparent; border: none;"><div class="themes"><p>{{message.themeID}}</p></div></button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <p>{{message.texte}}</p>
+    <section><img src="{{message.image}}" alt="image" width="'.$new_width.'" height="'.$new_height.'"></section>
+</article>

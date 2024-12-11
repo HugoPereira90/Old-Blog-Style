@@ -1,0 +1,48 @@
+{
+    "message": [
+        {
+            "ID" : 0,
+            "date": "06/06/2023",
+            "ThemeID": 1,
+            "texte": "test",
+            "OwnerID": 0,
+            "image": "../assets/Images/edit.png"
+        }
+    ],
+  
+    "user":[
+        {
+            "ID": 0,
+            "username": "admin",
+            "password": "admin",
+            "photo": "../assets/Images/profil.png",
+            "email": "admin.admin@gmail.fr"
+        },
+        {
+            "ID": 1,
+            "username": "user",
+            "password": "1234",
+            "photo": "../assets/Images/profil.png",
+            "email": "user@gmail.fr"
+        }
+    ],
+
+    "friends":[
+        {
+            "IDUser": 0,
+            "IDFreind": 1
+        }
+    ],
+
+    "theme":[
+        {
+            "ThemeID": 0,
+            "name": "Nature"
+        },
+        {
+            "ThemeID": 1,
+            "name": "Sport"
+        }
+        
+    ]
+  }

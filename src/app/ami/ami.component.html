@@ -1,0 +1,17 @@
+<div id="ChatContainer">
+    <h4>AMIS</h4>
+    <?php
+        $query = "SELECT u.pseudo, u.pdp, u.ID
+                    FROM user u
+                        INNER JOIN friendship f ON u.ID = f.friend_id
+                    WHERE f.user_id = ".$_SESSION['userID']; 
+        $result = $SQLconn->conn->query($query);
+        include(__ROOT__."/PageParts/friend.php");
+    ?>
+</div>
+<div id="chat-container">
+    <h4>DISCUSSION</h4>
+    <?php
+        include(__ROOT__."/PageParts/mp.php");  
+    ?>
+</div>
