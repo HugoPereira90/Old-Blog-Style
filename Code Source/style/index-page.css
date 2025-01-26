@@ -1,0 +1,128 @@
+/* CSS Regroupant  */
+
+/* Tous les éléments on la forme d'une boîte */
+* {
+box-sizing: border-box;
+}
+
+/* Style de la page entière */
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 0px;
+}
+
+/* Style de la tête de la page */
+.header {
+padding: auto;  
+text-align: center;
+font-size: 35px;
+}
+
+/* Style du bas de la page */
+.footer {
+padding: 10px;
+text-align: center;
+width: 100%;
+bottom: 0;
+}
+
+h1,h2,h3 {
+font-family: verdana;
+text-align: center;
+}
+
+/* Style de la partie du milieu entre le "header" et le "footer" */
+#MainContainer {
+display: flex;
+justify-content: space-between;
+margin: 10px auto;
+width: 98%;
+padding: 0px 0px;
+}
+
+/* Style d'une colonne */
+.column {
+float: left;
+padding: 10px;
+}
+
+/* Style de la colonne de côté */
+.column.side {
+border-style:double; 
+width: 20%;
+height: 250px;
+}
+
+/* Style de la colonne du milieu */
+.column.middle {
+border-style:double;
+width: 50%;
+}
+
+/* Style pour centrer le texte */
+.center {
+text-align: center;
+}
+
+.nav1 {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.nav1 a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,120 @@
+/* CSS Regroupant toutes les couleurs de chaque balise et classes */
+
+body {
+    background-color: rgb(129, 126, 126);
+}
+    
+.header {
+    background-color: #D3D3D3;
+    color: red;
+}
+  
+.footer {
+    background-color: #333;
+    color: white;
+}
+    
+ul {
+    background-color: #afafaf;;
+}
+  
+hr {
+    border-color: red;
+}
+
+h1,h2,h3 {
+	color: red;
+}
+
+li a {
+    color: red;
+}
+    
+li a:hover:not(.active) {
+    background-color: #686C5E;
+}
+    
+.active {
+    background-color: red;
+}
+    
+#MainContainer {
+    background-color: rgb(129, 126, 126);
+}
+  
+.column.side { 
+    background-color: #D3D3D3;
+    border-color:red;
+	color: red;
+
+}
+  
+.column.middle {
+    background-color: #D3D3D3;
+    border-color:red;
+}
+
+form{
+    border-color:  #D3D3D3;
+	background-color: #D3D3D3;
+}
+
+label {
+	color:white;
+	background-color:red;
+}
+
+input, textarea {
+	border-color: #999999;
+}
+
+input:focus, textarea:focus{
+	border-color: #000000;
+}
+
+.formbutton{
+	background-color:whitesmoke;
+    color : red
+}
+
+button {
+	color: white;
+	background-color: red;
+}
+
+button:hover{
+	background-color: #850606;
+}
+
+.successMessage{
+	background-color: green;
+	color: white;
+}
+
+.errorMessage{
+	background-color: red;
+	color: white;
+}
+
+.blogPost{
+	background-color: #D3D3D3;
+	border-color:red;
+}
+
+.postTitle {
+    background-color: #D3D3D3;
+}
+
+.postTitle h3 {
+    background-color: #D3D3D3;
+}
+
+.postTitle p {
+	background-color: #D3D3D3;
+	color:black;
+}
+
+.postAuthor {
+	background-color: #D3D3D3;
+	color:black;
+}

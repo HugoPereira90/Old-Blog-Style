@@ -1,0 +1,150 @@
+/* CSS Regroupant toutes les caractéristiques des formulaires et des posts */
+
+/* Style du formulaire */
+form{
+	margin: 10px auto;
+	width : 80%;
+	padding : 1em;
+	border : 1px solid;
+	text-align:center;
+	border-radius: 25px;
+}
+
+/* Style des éléments dans le formulaire */
+form div {
+	margin-top:1em;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+}
+
+/* Style du texte affiché */
+label {
+	font-family:verdana;
+	font-weight:bold;
+	display:inline-block;
+	width:150px;
+	text-align: center;
+	padding:5px 20px;
+	border-radius:25px;
+}
+
+/* Style des entrée texte */
+input, textarea {
+	font: 1em sans-serif;
+	width : 50%;
+	box-sizing:border-box;
+	border: 1px solid;
+	margin-left:40px;
+}
+
+/* Style de la zone de texte */
+textarea {
+	vertical-align:top;
+	height:5em;
+}
+
+/* Style du bouton du formulaire */
+.formbutton{
+	padding:20px;
+	border-radius: 25px;
+}
+
+/* Style d'un bouton */
+.form .button {
+	font-weight:bold;
+	margin-left: .5em;
+	padding: 8px 30px;
+	border-radius: 25px;
+}
+
+/* Style lorsque l'on survole un bouton */
+.form .button:hover{
+	font-size:1.1em;
+	padding: 9px 32px;
+}
+
+/* Style des messages */
+.msg, .msg p {
+	font-size:1.1em;
+	text-align:center;
+}
+
+/* Style de la page de post */
+.blogPost{
+	margin : 20px auto;
+	width:90%;
+	border: 4px double;
+	border-radius:25px;
+}
+
+/* Style du contenu d'un post */
+.postContent {
+	margin : 10px auto;
+	width:85%;
+}
+
+/* Style de la partie titre d'un post */
+.postTitle{
+	border-radius: 20px 20px 0px 0px;
+	margin:0px 30px 0 0;
+	overflow: auto;
+}
+
+/* Style du titre du post  */
+.postTitle h3 {
+	float: right;
+	font-size:1.25em;
+	text-align: right;
+}
+
+/* Style de la date du post */
+.postTitle p {
+	margin: 10px 0px 10px 70px;
+	padding:0;
+	font-style: italic;
+}
+
+/* Style de la page de modification d'un post */
+.postModify {
+	float:right;
+}
+
+/* Style du formulaire de modification d'un post */
+.postModify form{
+	float:right;
+	margin:0px 30px 0 0;
+	padding:0px;
+	border:0;
+}
+
+/* Style des boutons du formulaire de modification de post */
+.postModify form button{
+	margin:20px 0px 0px 0px;
+}
+
+/* Style de l'auteur du post */
+.postAuthor {
+	float: left;
+	font-size:1.4em;
+	font-weight:bold;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 20px 10px 0px 0px;
+	text-align: left;
+}
+
+.HideFormContainer{
+	float:right; 
+	width:25%;
+	text-align: left;
+}
+
+#passHide{
+	margin-top:62px;
+	padding-left:10px;
+}
+
+.formfield{
+	text-align:right;
+	width:100%;
+}
